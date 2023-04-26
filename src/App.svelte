@@ -1,5 +1,10 @@
 <script>
   import Test1 from "./component/Test1.svelte";
+  import CheckBox from "./component/bindings/CheckBox.svelte";
+  import GroupInputs from "./component/bindings/GroupInputs.svelte";
+  import InputBinding from "./component/bindings/InputBinding.svelte";
+  import NumericalInputBinding from "./component/bindings/NumericalInputBinding.svelte";
+  import Select from "./component/bindings/Select.svelte";
   import ComponentEvent from "./component/events/ComponentEvent.svelte";
   import DomEventFordwarding from "./component/events/DOMEventFordwarding.svelte";
   import DomEvents from "./component/events/DomEvents.svelte";
@@ -28,22 +33,28 @@
 
 </script>
 
-
 <main>
-
-  <!-- Reactivity -->
+  <!--########### Reactivity ###########-->
   <!-- <ReactivityDeclaration />
   <ReactivityStatement/>
   <ReactivityInArrays/> -->
 
-    <!-- DOM Events -->
+  <!--########### DOM Events ###########-->
   <!-- <DomEvents/>
   <InlineHandler/> -->
   <!-- <EventModifier /> -->
 
-  <ComponentEvent/>
+  <!-- <ComponentEvent />
   <EventForwarding />
-  <DomEventFordwarding />
+  <DomEventFordwarding /> -->
+
+  <!-- ########### Binding ########### -->
+  <InputBinding />
+  <NumericalInputBinding />
+  <CheckBox />
+  <GroupInputs />
+  <Select />
+
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
   <h3>my color is {color}</h3>
