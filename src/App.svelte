@@ -2,6 +2,7 @@
   import Test1 from "./component/Test1.svelte";
   import ComponentEvent from "./component/events/ComponentEvent.svelte";
   import DomEvents from "./component/events/DomEvents.svelte";
+  import EventForwarding from "./component/events/EventForwarding.svelte";
   import EventModifier from "./component/events/EventModifier.svelte";
   import InlineHandler from "./component/events/InlineHandler.svelte";
   import ReactivityDeclaration from "./component/reactivity/ReactivityDeclaration.svelte";
@@ -40,7 +41,7 @@
   <!-- <EventModifier /> -->
 
   <ComponentEvent/>
-
+  <EventForwarding />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
