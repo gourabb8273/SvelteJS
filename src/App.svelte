@@ -1,5 +1,9 @@
 <script>
   import Test1 from "./component/Test1.svelte";
+  import ComponentEvent from "./component/events/ComponentEvent.svelte";
+  import DomEvents from "./component/events/DomEvents.svelte";
+  import EventModifier from "./component/events/EventModifier.svelte";
+  import InlineHandler from "./component/events/InlineHandler.svelte";
   import ReactivityDeclaration from "./component/reactivity/ReactivityDeclaration.svelte";
   import ReactivityInArrays from "./component/reactivity/ReactivityInArrays.svelte";
   import ReactivityStatement from "./component/reactivity/ReactivityStatement.svelte";
@@ -22,21 +26,26 @@
 
 </script>
 
-<style>
-  .title {
-    color: red;
-  }
-
-</style>
 
 <main>
-  <ReactivityDeclaration />
-  <ReactivityStatement/>
-  <ReactivityInArrays/>
 
-  <h1 class="title">Hello World</h1>
+  <!-- Reactivity -->
+  <!-- <ReactivityDeclaration />
+  <ReactivityStatement/>
+  <ReactivityInArrays/> -->
+
+    <!-- DOM Events -->
+  <!-- <DomEvents/>
+  <InlineHandler/> -->
+  <!-- <EventModifier /> -->
+
+  <ComponentEvent/>
+
+
+  <!-- <Test1 {...userInfo}  /> -->
+  <!-- <h1 class="title">Hello World</h1>
   <h3>my color is {color}</h3>
-  <Test1 {...userInfo} {name} />
+
 
   {#if x > 10}
     <h4>X is greater than 10</h4>
@@ -57,5 +66,12 @@
         </a>
       </li>
     {/each}
-  </ul>
+  </ul> -->
 </main>
+
+<style>
+  .title {
+    color: red;
+  }
+
+</style>
