@@ -1,6 +1,7 @@
 <script>
   import Test1 from "./component/Test1.svelte";
   import ComponentEvent from "./component/events/ComponentEvent.svelte";
+  import DomEventFordwarding from "./component/events/DOMEventFordwarding.svelte";
   import DomEvents from "./component/events/DomEvents.svelte";
   import EventForwarding from "./component/events/EventForwarding.svelte";
   import EventModifier from "./component/events/EventModifier.svelte";
@@ -42,7 +43,7 @@
 
   <ComponentEvent/>
   <EventForwarding />
-
+  <DomEventFordwarding />
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
   <h3>my color is {color}</h3>

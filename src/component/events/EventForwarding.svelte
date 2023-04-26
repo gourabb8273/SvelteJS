@@ -8,6 +8,6 @@
 </script>
 
 <div>
-  <h3>Event Forwarding</h3>
+  <h3>Custom Event Forwarding</h3>
   <EventForwardingOuter on:message={handleMessage}/>
 </div>
