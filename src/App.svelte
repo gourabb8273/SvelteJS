@@ -11,6 +11,10 @@
   import EventForwarding from "./component/events/EventForwarding.svelte";
   import EventModifier from "./component/events/EventModifier.svelte";
   import InlineHandler from "./component/events/InlineHandler.svelte";
+  import BeforeAndAfterUpdate from "./component/lifeCycleMethods/BeforeAndAfterUpdate.svelte";
+  import OnDestroy from "./component/lifeCycleMethods/OnDestroy.svelte";
+  import OnMount from "./component/lifeCycleMethods/OnMount.svelte";
+  import Tick from "./component/lifeCycleMethods/Tick.svelte";
   import ReactivityDeclaration from "./component/reactivity/ReactivityDeclaration.svelte";
   import ReactivityInArrays from "./component/reactivity/ReactivityInArrays.svelte";
   import ReactivityStatement from "./component/reactivity/ReactivityStatement.svelte";
@@ -49,11 +53,17 @@
   <DomEventFordwarding /> -->
 
   <!-- ########### Binding ########### -->
-  <InputBinding />
+  <!-- <InputBinding />
   <NumericalInputBinding />
   <CheckBox />
   <GroupInputs />
-  <Select />
+  <Select /> -->
+
+  <!-- ########### Lifecycle Methods ########### -->
+  <!-- <OnMount /> -->
+  <!-- <OnDestroy /> -->
+  <!-- <BeforeAndAfterUpdate /> -->
+  <Tick/>
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
