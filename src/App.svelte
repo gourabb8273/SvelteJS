@@ -18,6 +18,9 @@
   import ReactivityDeclaration from "./component/reactivity/ReactivityDeclaration.svelte";
   import ReactivityInArrays from "./component/reactivity/ReactivityInArrays.svelte";
   import ReactivityStatement from "./component/reactivity/ReactivityStatement.svelte";
+  import NamedSlot from "./component/slots/NamedSlot.svelte";
+  import Slot from "./component/slots/Slot.svelte";
+  import SlotProps from "./component/slots/SlotProps.svelte";
 
   let color = "Red";
   export let name = "Gourab"; //for passing props
@@ -63,7 +66,12 @@
   <!-- <OnMount /> -->
   <!-- <OnDestroy /> -->
   <!-- <BeforeAndAfterUpdate /> -->
-  <Tick/>
+  <!-- <Tick/> -->
+
+  <!-- ########### Slot ########### -->
+  <Slot />
+  <NamedSlot />
+  <SlotProps />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
