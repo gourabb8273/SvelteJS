@@ -1,6 +1,6 @@
 <script>
   import Test1 from "./component/Test1.svelte";
-  import DisplayCounter from "./component/usedStore/DisplayCounter.svelte";  
+  import DisplayCounter from "./component/usedStore/DisplayCounter.svelte";
   import CheckBox from "./component/bindings/CheckBox.svelte";
   import GroupInputs from "./component/bindings/GroupInputs.svelte";
   import InputBinding from "./component/bindings/InputBinding.svelte";
@@ -24,6 +24,7 @@
   import Slot from "./component/slots/Slot.svelte";
   import SlotProps from "./component/slots/SlotProps.svelte";
   import TimerFromStore from "./component/usedStore/TimerFromStore.svelte";
+  import DisplayCounterWithCustomStore from "./component/usedStore/DisplayCounterWithCustomStore.svelte";
 
   let color = "Red";
   export let name = "Gourab"; //for passing props
@@ -76,11 +77,14 @@
   <!-- <NamedSlot /> -->
   <!-- <SlotProps /> -->
 
-    <!-- ########### counter using Store  ########### -->
-    <!-- <DisplayCounter /> -->
+  <!-- ########### counter using Store  ########### -->
+  <!-- <DisplayCounter /> -->
 
-        <!-- ########### Timer using Store  ########### -->
-        <TimerFromStore />
+  <!-- ########### Timer using Store  ########### -->
+  <!-- <TimerFromStore /> -->
+
+  <!-- ########### Counter using custom store ########### -->
+  <DisplayCounterWithCustomStore />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
