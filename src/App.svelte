@@ -1,6 +1,6 @@
 <script>
   import Test1 from "./component/Test1.svelte";
-  import DisplayCounter from "./component/UsedStore/DisplayCounter.svelte";  
+  import DisplayCounter from "./component/usedStore/DisplayCounter.svelte";  
   import CheckBox from "./component/bindings/CheckBox.svelte";
   import GroupInputs from "./component/bindings/GroupInputs.svelte";
   import InputBinding from "./component/bindings/InputBinding.svelte";
@@ -16,12 +16,14 @@
   import OnDestroy from "./component/lifeCycleMethods/OnDestroy.svelte";
   import OnMount from "./component/lifeCycleMethods/OnMount.svelte";
   import Tick from "./component/lifeCycleMethods/Tick.svelte";
+  import Timer from "./component/lifeCycleMethods/Timer.svelte";
   import ReactivityDeclaration from "./component/reactivity/ReactivityDeclaration.svelte";
   import ReactivityInArrays from "./component/reactivity/ReactivityInArrays.svelte";
   import ReactivityStatement from "./component/reactivity/ReactivityStatement.svelte";
   import NamedSlot from "./component/slots/NamedSlot.svelte";
   import Slot from "./component/slots/Slot.svelte";
   import SlotProps from "./component/slots/SlotProps.svelte";
+  import TimerFromStore from "./component/usedStore/TimerFromStore.svelte";
 
   let color = "Red";
   export let name = "Gourab"; //for passing props
@@ -75,7 +77,10 @@
   <!-- <SlotProps /> -->
 
     <!-- ########### counter using Store  ########### -->
-    <DisplayCounter />
+    <!-- <DisplayCounter /> -->
+
+        <!-- ########### Timer using Store  ########### -->
+        <TimerFromStore />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
