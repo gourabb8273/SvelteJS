@@ -30,6 +30,8 @@
   import DashBoardUsingSpecialComponentTag from "./component/dynamicComponents/DashBoardUsingSpecialComponentTag.svelte";
   import ModuleContext from "./component/moduleContext/ModuleContext.svelte";
   import SpecialHtmlTag from "./component/specialTag/SpecialHTMLTag.svelte";
+  import CounterCard from "./component/contextAPI/CounterCard.svelte";
+  import IncrementCounterUsingContext from "./component/contextAPI/IncrementCounterUsingContext.svelte";
 
   let color = "Red";
   export let name = "Gourab"; //for passing props
@@ -104,7 +106,10 @@
   <!-- <ModuleContext /> -->
 
   <!-- ########### Special HTML Tag ########### -->
-  <SpecialHtmlTag />
+  <!-- <SpecialHtmlTag /> -->
+
+    <!-- ########### Context API Counter ########### -->
+    <IncrementCounterUsingContext/>
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
