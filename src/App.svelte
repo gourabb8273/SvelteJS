@@ -25,6 +25,7 @@
   import SlotProps from "./component/slots/SlotProps.svelte";
   import TimerFromStore from "./component/usedStore/TimerFromStore.svelte";
   import DisplayCounterWithCustomStore from "./component/usedStore/DisplayCounterWithCustomStore.svelte";
+  import AutoFocus from "./component/thisBinding/AutoFocus.svelte";
 
   let color = "Red";
   export let name = "Gourab"; //for passing props
@@ -84,7 +85,10 @@
   <!-- <TimerFromStore /> -->
 
   <!-- ########### Counter using custom store ########### -->
-  <DisplayCounterWithCustomStore />
+  <!-- <DisplayCounterWithCustomStore /> -->
+
+    <!-- ########### this binding auto focus ########### -->
+    <AutoFocus />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
