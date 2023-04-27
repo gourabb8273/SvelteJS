@@ -28,6 +28,7 @@
   import AutoFocus from "./component/thisBinding/AutoFocus.svelte";
   import DashBoard from "./component/dynamicComponents/DashBoard.svelte";
   import DashBoardUsingSpecialComponentTag from "./component/dynamicComponents/DashBoardUsingSpecialComponentTag.svelte";
+  import ModuleContext from "./component/moduleContext/ModuleContext.svelte";
 
   let color = "Red";
   export let name = "Gourab"; //for passing props
@@ -93,10 +94,13 @@
   <!-- <AutoFocus /> -->
 
   <!-- ########### Dynamic Component ########### -->
-  <DashBoard />
+  <!-- <DashBoard /> -->
 
-    <!-- ########### Dynamic Component using special component tag ########### -->
-    <DashBoardUsingSpecialComponentTag />
+  <!-- ########### Dynamic Component using special component tag ########### -->
+  <!-- <DashBoardUsingSpecialComponentTag /> -->
+
+  <!-- ########### Module context with total count ########### -->
+  <ModuleContext />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
