@@ -1,5 +1,6 @@
 <script>
   import Test1 from "./component/Test1.svelte";
+  import DisplayCounter from "./component/UsedStore/DisplayCounter.svelte";  
   import CheckBox from "./component/bindings/CheckBox.svelte";
   import GroupInputs from "./component/bindings/GroupInputs.svelte";
   import InputBinding from "./component/bindings/InputBinding.svelte";
@@ -69,9 +70,12 @@
   <!-- <Tick/> -->
 
   <!-- ########### Slot ########### -->
-  <Slot />
-  <NamedSlot />
-  <SlotProps />
+  <!-- <Slot /> -->
+  <!-- <NamedSlot /> -->
+  <!-- <SlotProps /> -->
+
+    <!-- ########### counter using Store  ########### -->
+    <DisplayCounter />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
