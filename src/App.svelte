@@ -29,6 +29,7 @@
   import DashBoard from "./component/dynamicComponents/DashBoard.svelte";
   import DashBoardUsingSpecialComponentTag from "./component/dynamicComponents/DashBoardUsingSpecialComponentTag.svelte";
   import ModuleContext from "./component/moduleContext/ModuleContext.svelte";
+  import SpecialHtmlTag from "./component/specialTag/SpecialHTMLTag.svelte";
 
   let color = "Red";
   export let name = "Gourab"; //for passing props
@@ -100,7 +101,10 @@
   <!-- <DashBoardUsingSpecialComponentTag /> -->
 
   <!-- ########### Module context with total count ########### -->
-  <ModuleContext />
+  <!-- <ModuleContext /> -->
+
+  <!-- ########### Special HTML Tag ########### -->
+  <SpecialHtmlTag />
 
   <!-- <Test1 {...userInfo}  /> -->
   <!-- <h1 class="title">Hello World</h1>
